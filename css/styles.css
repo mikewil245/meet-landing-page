@@ -10,9 +10,6 @@ header {
   margin-top: 3rem;
 }
 
-.container {
-  /* max-width: 75rem;*/
-}
 .container .hero-section {
   margin-top: 4rem;
   display: grid;
@@ -20,7 +17,6 @@ header {
 }
 .container .hero-section button {
   display: block;
-  margin: 0 auto;
   text-align: center;
   font-size: 1rem;
   font-weight: 900;
@@ -46,11 +42,12 @@ header {
   font-weight: 500;
   color: rgb(135, 135, 157);
   text-align: center;
-  /*width: 500px;*/
 }
 .container .hero-section .hero-content .btn-components {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .container .hero-section .hero-content .btn-components .blue-btn {
@@ -110,8 +107,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 55px;
 }
 .container .main-content .content {
   display: flex;
@@ -137,14 +133,12 @@ header {
   font-weight: 900;
   font-size: 2rem;
   margin-bottom: 1rem;
-  /*width: 500px;*/
 }
 .container .main-content .content p {
   color: rgb(135, 135, 157);
   line-height: 1.4;
   font-size: 1rem;
   font-weight: 500;
-  /*   max-width: 600px;*/
 }
 .container footer picture {
   position: relative;
@@ -164,8 +158,8 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 110px;
   width: 100%;
-  margin-top: 10rem;
 }
 .container footer .divider-two {
   color: rgb(135, 135, 157);
@@ -246,7 +240,7 @@ header {
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .img-hero-left,
   .img-hero-right {
     display: none;
@@ -257,6 +251,11 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+  .container .hero-section .hero-content .btn-components {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+  }
 }
 @media screen and (min-width: 769px) {
   .footer-content {
@@ -266,7 +265,7 @@ header {
     gap: 1rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
   .img-hero-left,
   .img-hero-right {
     display: block;
