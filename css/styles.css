@@ -98,7 +98,6 @@ header {
 .container .main-content {
   margin-top: 4rem;
   padding: 0 2rem;
-  min-height: 100vh;
 }
 .container .main-content img {
   border-radius: 0.6rem;
