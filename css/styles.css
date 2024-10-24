@@ -10,12 +10,7 @@ header {
   margin-top: 3rem;
 }
 
-.container .hero-section {
-  margin-top: 4rem;
-  display: grid;
-  place-items: center;
-}
-.container .hero-section button {
+button {
   display: block;
   text-align: center;
   font-size: 1rem;
@@ -23,6 +18,12 @@ header {
   color: rgb(250, 250, 250);
   border-radius: 1.81rem;
   border: none;
+}
+
+.container .hero-section {
+  margin-top: 4rem;
+  display: grid;
+  place-items: center;
 }
 .container .hero-section .hero-content {
   margin-top: 3rem;
@@ -139,37 +140,26 @@ header {
   font-size: 1rem;
   font-weight: 500;
 }
-.container footer picture {
-  position: relative;
-}
-.container footer picture ::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(77, 150, 169, 0.5);
-  pointer-events: none;
-}
 .container footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: linear-gradient(hsla(195, 37%, 48%, 0.8), hsla(195, 37%, 48%, 0.8)), url(../starter-code/assets/desktop/image-footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  margin-top: 110px;
-  width: 100%;
+  margin-top: 11rem;
+  padding-top: 5.75rem;
 }
 .container footer .divider-two {
   color: rgb(135, 135, 157);
   font-size: 1rem;
   position: absolute;
-  bottom: 85%;
   z-index: 2;
+  bottom: 80%;
+  left: 46%;
 }
 .container footer .divider-two .number-line {
   width: 0.06rem;
-  height: 5rem;
+  height: 80px;
   margin: 0 auto;
   background: rgb(135, 135, 157);
 }
@@ -184,7 +174,6 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
   font-weight: 900;
 }
 .container footer button {
@@ -221,28 +210,29 @@ header {
   margin-top: 1.5rem;
 }
 .container .footer-content {
-  text-align: center;
-  z-index: 1;
-  color: white;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
-}
-.container footer picture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-.container footer picture img {
-  width: 100%;
-  height: 100%;
+  text-align: center;
+  color: rgb(250, 250, 250);
 }
 
 @media screen and (max-width: 800px) {
   .img-hero-left,
   .img-hero-right {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container footer .divider-two {
+    position: absolute;
+    bottom: 89%;
+  }
+  .container footer .footer-content {
+    max-inline-size: 504px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -254,14 +244,6 @@ header {
     display: flex;
     flex-direction: row;
     gap: 0.7rem;
-  }
-}
-@media screen and (min-width: 769px) {
-  .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
   }
 }
 @media screen and (min-width: 801px) {
@@ -279,7 +261,6 @@ header {
   }
   .container .main-content {
     margin-top: 4rem;
-    padding: 0 6rem;
   }
   .hero-content p {
     width: 500px;
@@ -290,6 +271,17 @@ header {
   }
   .content h2 {
     width: 500px;
+  }
+  .container .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.7rem;
+  }
+  .container footer .divider-two {
+    position: absolute;
+    bottom: 88%;
+    left: 46%;
   }
 }
 
