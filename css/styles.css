@@ -145,6 +145,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   position: relative;
   margin-top: 11rem;
   padding-top: 5.75rem;
@@ -261,6 +262,13 @@ button {
   }
   .container .main-content {
     margin-top: 4rem;
+    padding: 0 5rem;
+  }
+  .container .main-content .grid-container {
+    gap: 1rem;
+  }
+  .container .main-content img {
+    width: 100%;
   }
   .hero-content p {
     width: 500px;
